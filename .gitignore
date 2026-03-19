@@ -31,6 +31,9 @@ yarn-error.log*
 # env files
 .env*.local
 
+# claude code memory
+/memory
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
