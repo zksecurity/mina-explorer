@@ -11,20 +11,20 @@ export const networks: Record<NetworkId, NetworkConfig> = {
   lightnet: {
     id: "lightnet",
     name: "Lightnet",
-    graphqlUrl: process.env.NEXT_PUBLIC_LIGHTNET_GRAPHQL_URL || "",
-    rosettaUrl: process.env.NEXT_PUBLIC_LIGHTNET_ROSETTA_URL || "",
+    graphqlUrl: process.env.LIGHTNET_GRAPHQL_URL || "",
+    rosettaUrl: process.env.LIGHTNET_ROSETTA_URL || "",
   },
   devnet: {
     id: "devnet",
     name: "Devnet",
-    graphqlUrl: process.env.NEXT_PUBLIC_DEVNET_GRAPHQL_URL || "",
-    rosettaUrl: process.env.NEXT_PUBLIC_DEVNET_ROSETTA_URL || "",
+    graphqlUrl: process.env.DEVNET_GRAPHQL_URL || "",
+    rosettaUrl: process.env.DEVNET_ROSETTA_URL || "",
   },
   mainnet: {
     id: "mainnet",
     name: "Mainnet",
-    graphqlUrl: process.env.NEXT_PUBLIC_MAINNET_GRAPHQL_URL || "",
-    rosettaUrl: process.env.NEXT_PUBLIC_MAINNET_ROSETTA_URL || "",
+    graphqlUrl: process.env.MAINNET_GRAPHQL_URL || "",
+    rosettaUrl: process.env.MAINNET_ROSETTA_URL || "",
   },
 };
 
