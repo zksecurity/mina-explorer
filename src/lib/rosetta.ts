@@ -1,8 +1,10 @@
 import { NetworkConfig } from "./networks";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 function getRosettaUrl(network: NetworkConfig, path: string): string {
   if (typeof window !== "undefined") {
-    return `/api/rosetta?network=${network.id}&path=${encodeURIComponent(path)}`;
+    return `${basePath}/api/rosetta?network=${network.id}&path=${encodeURIComponent(path)}`;
   }
   return `${network.rosettaUrl}${path}`;
 }

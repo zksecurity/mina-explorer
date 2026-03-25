@@ -1,9 +1,11 @@
 import { NetworkConfig } from "./networks";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 function getGraphqlUrl(network: NetworkConfig): string {
   // In the browser, proxy through our API route to avoid CORS
   if (typeof window !== "undefined") {
-    return `/api/graphql?network=${network.id}`;
+    return `${basePath}/api/graphql?network=${network.id}`;
   }
   return network.graphqlUrl;
 }
