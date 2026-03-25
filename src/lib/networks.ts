@@ -1,4 +1,4 @@
-export type NetworkId = "lightnet" | "devnet" | "mainnet";
+export type NetworkId = "testnet" | "devnet" | "mainnet";
 
 export interface NetworkConfig {
   id: NetworkId;
@@ -8,11 +8,11 @@ export interface NetworkConfig {
 }
 
 export const networks: Record<NetworkId, NetworkConfig> = {
-  lightnet: {
-    id: "lightnet",
-    name: "Lightnet",
-    graphqlUrl: process.env.LIGHTNET_GRAPHQL_URL || "",
-    rosettaUrl: process.env.LIGHTNET_ROSETTA_URL || "",
+  testnet: {
+    id: "testnet",
+    name: "Testnet",
+    graphqlUrl: process.env.TESTNET_GRAPHQL_URL || "",
+    rosettaUrl: process.env.TESTNET_ROSETTA_URL || "",
   },
   devnet: {
     id: "devnet",
